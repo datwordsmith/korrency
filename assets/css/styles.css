@@ -74,6 +74,10 @@ main {
     background-size: cover;
 }
 
+.kbtn-light {
+    color: #f4f4f4;
+}
+
 .kbtn-full {
     width: 100%;
     font-size:small;    
