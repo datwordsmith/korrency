@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/ad9c87abbe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
 </head>
 <body>   
       <main>
@@ -106,7 +107,7 @@
             <div class="row gx-5 py-3 row-cols-1 row-cols-lg-3">
 
               <div class="col mb-4 text-center">
-                <div class="curve shadow p-4">
+                <div class="curve shadow p-4 bg-white">
                   <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                     <img class="w-75 pt-3" alt="" src="assets/images/set_rates.png">
                   </div>
@@ -116,7 +117,7 @@
               </div>
 
               <div class="col mb-4 text-center">
-                <div class="curve shadow p-4">
+                <div class="curve shadow p-4 bg-white">
                   <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                     <img class="w-75 pt-3" alt="" src="assets/images/fast_transfer.png">
                   </div>
@@ -126,7 +127,7 @@
               </div>
 
               <div class="col mb-4 text-center">
-                <div class="curve shadow p-4">
+                <div class="curve shadow p-4 bg-white">
                   <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                     <img class="w-75 pt-3" alt="" src="assets/images/user_focused.png">
                   </div>
@@ -145,7 +146,7 @@
         </div>
 
         <!--How it works-->
-        <div class="container-fluid py-5 d-flex flex-row mb-3" id="thehow">
+        <div class="container-fluid py-3 d-flex flex-row mb-3" id="thehow">
                 <!--Left Side-->
                 <div class="col-md-6 px-md-5 px-4 mb-4">
                   <div class="px-md-5">
@@ -230,6 +231,8 @@
                 <!--Title-->
                 <h1 class="text-center mb-4"><span class="kbtn-light">We keep your money</span> <span style="color: #A4C7FA;">Secured</span></h1>
 
+
+                
                   <div class="col-md-6 d-flex align-items-start text-white">
                     <div class="align-self-center me-4">
                       <img src="assets/images/trusted_partner.png" alt="" >
@@ -280,7 +283,8 @@
         </div>
         <!--END WE KEEP YOUR MONEY SECURED-->
 
-        <section class="py-5 border">
+        <!--Testimonials-->
+        <section class="py-5">
               <!--Title-->
               <div class="container py-3">
                 <div class="row d-flex justify-content-center">
@@ -378,65 +382,121 @@
                 </div>
               </div>
         </section>
+        <!--End Testimonial Section-->
       
-
-        <!--Testimonials-->
-        <div class="container-fluid py-5" id="frame3">
-          <div class="container py-5">          
-
-
-          </div>
-        </div>
 
         <!-- FAQS -->
         <div class="container py-5">          
           <div class="row p-3">
             <!--Title-->
-            <h1 class="kcolor text-center fw-bold mb-4">FAQs</h1>
+            <h1 class="kcolor text-center fw-bold mb-4">Frequently Asked Questions</h1>
 
-            <div class="col-md-12 mb-5">
+            <div class="col-md-12 mb-5 faq" id="faq">
 
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item curve mb-5">
-                  <h2 class="" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="faq-list">
+                <ul>
+                  <li>
+                    <div class="d-flex">
+                      <div class="p-2 w-100">
+                        <strong class="kcolor">What is lorem?</strong>
+                        <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                          <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                          </p>
+                        </div>                        
+                      </div>
+                      <div class="d-flex p-2 flex-shrink-1 align-content-center">
+                        <a data-bs-toggle="collapse" class="collapse d-flex align-items-center" data-bs-target="#faq-list-1">
+                          <i class="fa fa-sm fa-angle-down icon-show px-2 py-2 rounded" aria-hidden="true"></i>
+                          <i class="fa fa-sm fa-angle-up icon-close px-2 py-2 rounded"></i>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </li>
 
-                <div class="accordion-item mb-5">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <li>
+                    <div class="d-flex">
+                      <div class="p-2 w-100">
+                        <strong class="kcolor">What is lorem?</strong>
+                        <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                          </p>
+                        </div>                        
+                      </div>
+                      <div class="d-flex p-2 flex-shrink-1 align-content-center">
+                        <a data-bs-toggle="collapse" class="collapsed d-flex align-items-center" data-bs-target="#faq-list-2">
+                          <i class="fa fa-sm fa-angle-down icon-show px-2 py-2 rounded" aria-hidden="true"></i>
+                          <i class="fa fa-sm fa-angle-up icon-close px-2 py-2 rounded"></i>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </li>
 
-                <div class="accordion-item mb-5">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <li>
+                    <div class="d-flex">
+                      <div class="p-2 w-100">
+                        <strong class="kcolor">What is lorem?</strong>
+                        <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                          </p>
+                        </div>                        
+                      </div>
+                      <div class="d-flex p-2 flex-shrink-1 align-content-center">
+                        <a data-bs-toggle="collapse" class="collapsed d-flex align-items-center" data-bs-target="#faq-list-3">
+                          <i class="fa fa-sm fa-angle-down icon-show px-2 py-2 rounded" aria-hidden="true"></i>
+                          <i class="fa fa-sm fa-angle-up icon-close px-2 py-2 rounded"></i>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </li>
+
+                  <li>
+                    <div class="d-flex">
+                      <div class="p-2 w-100">
+                        <strong class="kcolor">What is lorem?</strong>
+                        <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                          </p>
+                        </div>                        
+                      </div>
+                      <div class="d-flex p-2 flex-shrink-1 align-content-center">
+                        <a data-bs-toggle="collapse" class="collapsed d-flex align-items-center" data-bs-target="#faq-list-4">
+                          <i class="fa fa-sm fa-angle-down icon-show px-2 py-2 rounded" aria-hidden="true"></i>
+                          <i class="fa fa-sm fa-angle-up icon-close px-2 py-2 rounded"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- 
+                  <li>
+                    <div class="d-flex">
+                      <div class="p-2 w-100">
+                        <strong class="kcolor">What is lorem?</strong>
+                        <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                          </p>
+                        </div>                        
+                      </div>
+                      <div class="d-flex p-2 flex-shrink-1 align-content-center">
+                        <a data-bs-toggle="collapse" class="collapsed d-flex align-items-center" data-bs-target="#faq-list-5">
+                          <i class="fa fa-sm fa-angle-down icon-show px-2 py-2 rounded" aria-hidden="true"></i>
+                          <i class="fa fa-sm fa-angle-up icon-close px-2 py-2 rounded"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li> 
+                   -->                 
+                </ul>
               </div>
+            </div>
 
+            <div class="col d-flex justify-content-center align-items-center">
+              <a href="#" class="btn btn-lg kbtn-blue-border px-5 py-3 text-center">More FAQs</a>
             </div>
           </div>
         </div>
