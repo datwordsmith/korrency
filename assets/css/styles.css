@@ -100,6 +100,19 @@ main {
     color: #A4C7FA;
 }
 
+.kbtn-blue-border {
+    border: 1px #042E62 solid;
+    background-color: none !important;
+    border-radius: 25px;
+    color: #042E62;
+    font-size:small;
+}
+
+.kbtn-blue-border:hover {
+    border: 1px #A4C7FA solid;
+    color: #A4C7FA;
+}
+
 .kbtn {
     background: linear-gradient(90deg, #123C99 0%, #337FF1 96.67%);
     border: none;
@@ -208,8 +221,4 @@ main {
 .rnd-btn-case {
     background-color: #A4C7FA; 
     padding-left: 2px; padding-right: 2px;
-}
-
-#thehow {
-    
 }
