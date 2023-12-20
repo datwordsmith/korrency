@@ -74,6 +74,31 @@ main {
     background-size: cover;
 }
 
+/**** --COLOURS-- ***************/
+.kcolor {
+    color: #042E62;
+}
+
+.off-white-bg {
+    background-color: #f4f4f4 !important;
+}
+
+.off-white {
+    color: #a3a3a3 !important;
+}
+
+.kbkg {
+    background-color: #042E62;
+}
+
+.ktitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+/**** --BUTTONS-- ***************/
 .kbtn-light {
     color: #f4f4f4;
 }
@@ -168,6 +193,11 @@ main {
     color: white;
 }
 
+.rnd-btn-case {
+    background-color: #A4C7FA; 
+    padding-left: 2px; padding-right: 2px;
+}
+
 .amt-input-grp {
     border-radius: 5px;
 }
@@ -183,42 +213,45 @@ main {
     color: #6c757d;
 }
 
-
 .borderless-input {
     border: none;
     outline: none; /* Remove focus outline */
 }
 
-.curve {
-    border-radius: 5%;
+
+.tablet img {
+    z-index: 1;
 }
 
-.kcolor {
-    color: #042E62;
+.phone {
+    z-index: 3;
+    bottom: -20px;
+    left: -30px;
 }
 
-.kbkg {
-    background-color: #042E62;
-}
+.slide-down {
+    animation: slideDown 0.9s ease-in-out forwards;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-150px);
+    }
+    100% {
+      transform: translateY(20px); /* Adjust the distance to slide down */
+    }
+  }
+  
+  #thehow {
+    background-image: url('../images/tablet.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-size: 45%;
+  }
 
-.ktitle {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
-}
-
-
-.testimonial-text {
-  font-size: 18px;
-  font-style: italic;
-}
-.testimonial-author {
-  font-weight: bold;
-}
-
-
-.rnd-btn-case {
-    background-color: #A4C7FA; 
-    padding-left: 2px; padding-right: 2px;
-}
+  @media (max-width: 768px) {
+    #thehow {
+      background-image: none; /* Hide the background image */
+    }
+  }

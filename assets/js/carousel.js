@@ -1,4 +1,4 @@
-(function () {
+$(document).ready(function () {
   "use strict";
 
   var carousels = function () {
@@ -8,6 +8,8 @@
       margin: 0,
       responsiveClass: true,
       nav: false,
+      autoplay: true, // Add this line for auto-rotation
+      autoplayTimeout: 5000, // Set the time between slides (in milliseconds)
       responsive: {
         0: {
           items: 1,
@@ -26,7 +28,5 @@
     });
   };
 
-  (function ($) {
-    carousels();
-  })(jQuery);
+  carousels();
 })();
