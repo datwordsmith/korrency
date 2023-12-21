@@ -13,33 +13,45 @@
 </head>
 <body>   
       <main>
-        <div class="container-fluid" id="hero">
-          <nav class="navbar navbar-expand bg-danger py-4 border-primary-subtle border-bottom sticky-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Korrency</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">            
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <!--
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                  -->
-                </ul>
-              </div>
-            </div>
-          </nav>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg py-4 mb-4" id="navbar">
+          <div class="container">
+            <img class="" alt="" src="assets/images/korrency_logo.svg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
 
+              <div class="d-md-none my-3 border border-bottom">
+
+              </div>
+
+              <div class="">
+                <a href="#" class="btn btn-sm kbtn-dark px-3 py-2 me-2 ">Dashboard</a>
+                <a href="#" class="btn btn-sm kbtn-blue-border px-4 py-2">Logout</a>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+
+        <div class="container-fluid" id="hero">
           <div class="container py-5">
-              <div class="row py-5">
+              <div class="row py-5 mt-5">
                     <div class="col-md-6 my-auto mx-auto text-white text-center text-md-start">
                       <div class="me-md-5"> 
                         <h3 class="me-md-5 pe-md-3">Currency exchange and International money transfer for anyone, anywhere.</h3>
@@ -145,13 +157,24 @@
           </div>
         </div>
 
-        <!-- TEST -->
-        <section id="thehow">
+        <!-- HOW IT WORKS -->
+        <section id="thehow" class="position-relative pb-5">  
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1 class="kcolor text-md-start text-center fw-bold mb-3 py-5">How does it work?</h1>
+              </div>
+            </div>
+          </div> 
+          
+          <div class="d-flex align-items-stretch position-absolute bottom-1 end-0  d-none d-lg-block">
+            <img class="ms-auto img-fluid" src="assets/images/ipad_screen (Copy).png" alt="iPad Screen">
+          </div>
+
           <div class="container pb-5 mb-5">
               <div class="row">
                 <div class="col-md-6">
-                    <h1 class="kcolor text-md-start text-center fw-bold mb-4 py-5">How does it work?</h1>
-                    <div class="row gx-2 w-100 border-1 py-1 rounded-5 mb-4 mx-auto rnd-btn-case">
+                    <div class="row gx-2 w-100 border-1 py-1 rounded-5 mb-5 mx-auto rnd-btn-case">
                         <div class="col-6 text-center">
                             <button type="button" class="btn btn-lg px-4 kbtn-dark kbtn-full py-3" style="border: 1px #A4C7FA solid;">P2P</button>
                         </div>
@@ -159,10 +182,11 @@
                             <button type="button" class="btn btn-lg px-4 kbtn kbtn-full kbtn-blank py-3">Buy</button>                         
                         </div>                                
                     </div>
+                    <div class="md-3">&nbsp;</div>
                     <!--Item #1-->
                     <div class="row pb-3 mb-1 d-flex flex-row border-bottom">
-                      <div class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0">
-                        <img width="100" src="assets/images/create_account.png" alt="Create an Account">
+                      <div class="col d-flex align-items-center justify-content-center mb-3 mb-md-0">
+                        <img width="60" src="assets/images/create_account.png" alt="Create an Account">
                       </div>
                       <div class="ms-md-3 col-12 col-md-8 text-center text-md-start">
                         <h4 class="kcolor pb-2">Create an Account</h4>
@@ -175,8 +199,8 @@
 
                     <!--Item #2-->
                     <div class="row py-3 d-flex flex-row border-bottom">
-                      <div class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0">
-                        <img width="100" src="assets/images/verify_identity.png" alt="Verify your Identity">
+                      <div class="col d-flex align-items-center justify-content-center mb-3 mb-md-0">
+                        <img width="60" src="assets/images/verify_identity.png" alt="Verify your Identity">
                       </div>
                       <div class="ms-md-3 col-12 col-md-8 text-center text-md-start">
                         <h4 class="kcolor pb-2">Verify Your Identity</h4>
@@ -189,8 +213,8 @@
                     
                     <!--Item #3-->
                     <div class="row py-3 d-flex flex-row border-bottom">
-                      <div class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0">
-                        <img width="100" src="assets/images/create_offers.png" alt="Create/Browse Offers">
+                      <div class="col d-flex align-items-center justify-content-center mb-3 mb-md-0">
+                        <img width="60" src="assets/images/create_offers.png" alt="Create/Browse Offers">
                       </div>
                       <div class="ms-md-3 col-12 col-md-8 text-center text-md-start">
                         <h4 class="kcolor pb-2">Create or Browse Offers</h4>
@@ -203,8 +227,8 @@
                     
                     <!--Item #4-->
                     <div class="row pt-3 d-flex flex-row">
-                      <div class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0">
-                        <img width="100" src="assets/images/exchange_save.png" alt="Exchange/Save">
+                      <div class="col d-flex align-items-center justify-content-center mb-3 mb-md-0">
+                        <img width="60" src="assets/images/exchange_save.png" alt="Exchange/Save">
                       </div>
                       <div class="ms-md-3 col-12 col-md-8 text-center text-md-start">
                         <h4 class="kcolor pb-2">Exchange and Save!</h4>                        
@@ -216,7 +240,7 @@
                     </div> 
                 </div>
 
-                <div class="col-md-6 d-none d-md-block position-relative">
+                <div class="col-md-6 position-relative">
                   <div class="phone position-absolute">
                     <img class="" src="assets/images/mobile.png" alt="Mobile Phone">
                   </div>                                 
@@ -225,8 +249,6 @@
               </div>
           </div>
         </section>
-
-     
 
         <!-- WE KEEP YOUR MONEY SECURED -->
         <div class="container-fluid py-5 kbkg">          
@@ -387,7 +409,6 @@
         </section>
         <!--End Testimonial Section-->
       
-
         <!-- FAQS -->
         <div class="container py-5">          
           <div class="row p-3">
@@ -525,7 +546,6 @@
         </div>
         <!-- End Start Exchanging -->
         
-
         <!--Footer-->
         <div class="container-fluid bg-white">
           <div class="container kcolor">
@@ -596,6 +616,7 @@
 
       <script src="assets/js/carousel.js"></script>
       <script src="assets/js/phone.js"></script>
+      <script src="assets/js/navbar.js"></script>
       
 
 </body>
