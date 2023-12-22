@@ -41,31 +41,38 @@ body {
 
 
 #navbar {
-    position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.1); */
     transition: background-color 0.3s ease;
 }
 
 #navbar .navbar-nav .nav-link {
     color: #042E62;
+    font-size: 0.8em;
   }
 
 #navbar .navbar-nav .nav-link:hover {
     color: #042E62;
+    background-position: 0%;
   }
 
   #navbar .navbar-nav .nav-item .nav-link.active {
-    color: #FFFFFF;
-    border-bottom: #FFFFFF solid;
+    color: #042E62;
+    border-bottom: 1px solid #042E62;
+  }
+
+  .navbar .dropdown ul {
+    border: none;
+    font-size: 0.8em;
+    border-radius: 0;
+  }
+
+  .navbar .dropdown-toggle::after {
+    content: none !important;
   }
 
 #hero {
-    position: relative;
-    z-index: 1;
-    background-image: url('../images/Hero.png'); 
+    background-image: url('../images/New_hero.png'); 
     background-repeat: no-repeat;
     background-size: cover;
 }

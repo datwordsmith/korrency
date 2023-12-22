@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/* $(document).ready(function () {
     // Change navbar background color on scroll using jQuery
     function updateNavbarBackground() {
       var navbar = $("#navbar");
@@ -33,4 +33,16 @@ $(document).ready(function () {
         updateNavbarBackground();
       }
     });
-  });  
+  });   */
+
+    $(document).ready(function () {
+    var navbar = $("#navbar");
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() >= 0.5) {
+        navbar.addClass("fixed-top scrolled shadow-sm");
+      } else {
+        navbar.removeClass("fixed-top scrolled");
+      }
+    });
+  });
