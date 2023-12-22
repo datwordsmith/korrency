@@ -13,11 +13,10 @@
 
 .faq .faq-list li {
   padding: 20px;
-  background: #fffcfc;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   position: relative;
   border-radius: 0.8rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .faq .faq-list a {
@@ -41,8 +40,9 @@
 
 .faq .faq-list .icon-show,
 .faq .faq-list .icon-close {
-  font-size: 24px;
-  background-color: #A4C7FA;
+  font-size: 16px;
+  font-weight: 300px;
+  width: 30px;
 }
 
 .faq .faq-list p {
