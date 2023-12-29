@@ -109,7 +109,7 @@ main {
 
 /**** --COLOURS-- ***************/
 .kcolor {
-    color: #042E62;
+    color: #042E62 !important;
 }
 
 .off-white-bg {
@@ -279,5 +279,9 @@ main {
   .whycard {
     border: 1px solid #c5c5c52a;
     background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .form-control::placeholder {
+    font-size: 0.8em; /* Adjust the size to your preference */
   }
   
