@@ -14,41 +14,27 @@
 <body>   
       <main>
           <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg py-2 border-bottom" id="navbar" style="background-color: #e8ecf3;">
+          <nav class="navbar navbar-expand-lg py-2 border-bottom bg-white" id="navbar">
             <div class="container narrow">
               <img class="" alt="" src="assets/images/korrency_logo.svg">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto d-none">
+                <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#HowItWorks">How it works</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                      <i class="fa fa-sm fa-angle-down icon-show ms-1" aria-hidden="true"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                    </ul>
+                    <a class="nav-link" href="#FAQs">FAQs</a>
                   </li>
                 </ul>
 
                 <div class="ms-auto">
-                  <a href="#" class="btn btn-sm kbtn-dark px-3 py-2 me-2 ">Dashboard</a>
-                  <a href="#" class="btn btn-sm kbtn-blue-border px-4 py-2">Logout</a>
+                  <a href="#hero" class="btn btn-sm kbtn-dark px-3 py-2 me-2 ">Get Started</a>
                 </div>
 
               </div>
@@ -58,18 +44,12 @@
           <div class="container-fluid" id="hero">
             <div class="container narrow py-5">
                 <div class="row py-3 mt-2">
-                      <div class="col-md-6 py-5 my-auto mx-auto text-white text-center text-md-start">
+                      <div class="col-md-7 py-5 my-auto mx-auto text-white text-center text-md-start">
                         <div class="me-md-5"> 
-                          <h3 class="me-md-5 pe-md-3">Currency exchange and International money transfer for anyone, anywhere.</h3>
-                          <p class="py-2 my-4">Set your own rates and save with the trust of a secure, user-driven platform for your complete peace of mind.</p>
+                          <h1 class="me-md-5 pe-md-3">Transfer Internationally, Exchange Easily.</h1>
+                          <p class="py-2 my-4 sub-heading">Send/Receive money globally and securely exchange with peers at your own rate.</p>
                             
                           <div class="d-grid gap-3 d-md-block">
-                            <!-- <a href="#" class="btn kbtn-white px-4 py-2 text-center">Create Free Account</a>
-                            <a href="#" class="btn kbtn-white-border px-4 py-2 text-center ms-sm-2 border-1">
-                              <div class="d-flex align-items-center">
-                                <img src="assets/images/video_icon.png" alt="Watch Video" width="16px" class=""/> <span class="ps-2">See how it works</span>
-                              </div>
-                            </a> -->
                           </div>
 
                           <div class="row">
@@ -81,30 +61,44 @@
                             </div>                            
                           </div>                                                        
 
-                          <p class="mt-4"><strong>Regulated by FINTRAC</strong></p>
+                          <p class="mt-4">Regulated by <strong>FINTRAC</strong></p>
                         </div>                        
                       </div>
 
-                      <div class="col-md-6 col-sm-12 d-flex align-items-center">
-                          <div class="d-md-none mt-5"></div>
-                          <div class="d-none">                               
-                            <p class="mt-3 text-white text-center">Be the first to know about our new features, new corridors launch, exchange rate alerts, and more.</p>
-                            <form class="">
-                              <div class="row">
-                                <div class="mb-3">
-                                  <input type="email" class="form-control form-control-lg rounded-3 py-2 w-100" placeholder="Enter your email address" style="border: 1px solid #042E62;">
-                                </div>
-                                <div class="mb-3">
-                                  <div class="col-md-6 col-sm-12 mx-auto text-center">
-                                    <a href="#" class="btn btn-lg kbtn-white-border px-5 py-2">Join Now</a>
+                      <div class="col-md-5 col-sm-12 d-flex align-items-end" id="GetStarted">
+                          <div class="d-md-none mt-5"></div>                  
+                            <div class="col-12 justify-content-center p-3 p-lg-5 rounded-4 shadow w-100" id="hero-subscribe">  
+                                <h3 class="text-center text-white">Join our Special wait list</h3>
+                                <p class="mt-3 text-wrap info text-center text-white">Be the first to know about our new features, new corridors launch, exchange rate alerts, and more</p>
+                                <form id="subscribeForm" class="">
+                                  <div>
+                                    <label class="text-white mb-1 ms-2">Firstname</label>
+                                    <div class="input-group amt-input-grp mb-3 rounded">
+                                      <input id="firstnameInput" type="text" class="form-control form-control-lg" placeholder="Franklin" required>
+                                    </div>
                                   </div>
-                                </div>
-                              </div>
-                            </form>
-                          </div> 
-                          <div>
-                            <img class="img-fluid" src="assets/images/phones2.png" alt="korrency_mobile_apps"/>
-                          </div>      
+
+                                  <div>
+                                    <label class="text-white mb-1 ms-2">Surname</label>
+                                    <div class="input-group mb-3 rounded">
+                                      <input id="surnameInput" type="text" class="form-control form-control-lg" placeholder="John" required>
+                                    </div>
+                                  </div>
+                                  
+                                  <div>
+                                    <label class="text-white mb-1 ms-2">Email Address</label>
+                                    <div class="input-group amt-input-grp mb-3 rounded">
+                                      <input id="emailInput" type="email" class="form-control form-control-lg" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="franklin_john@email.com" required>
+                                    </div>
+                                  </div>                                  
+
+                                  <div class="my-4">
+                                    <div class="pt-2">
+                                      <button type="submit" class="btn btn-lg kbtn-dark kbtn-full px-4 py-3 w-100">Get Started</button>
+                                    </div>
+                                  </div>
+                                </form>                                
+                            </div>     
                       </div>
                 </div>
             </div>
@@ -150,14 +144,14 @@
 
               <div class="d-flex justify-content-center my-4">
                 <div class="pt-2">
-                  <a href="#" class="btn btn-lg kbtn-dark text-white px-4 py-2">Get Started</a>
+                  <a href="#GetStarted" class="btn btn-lg kbtn-dark text-white px-4 py-2">Get Started</a>
                 </div>
               </div>
             </div>
           </section>
           
           <!-- HOW IT WORKS -->
-          <div class="container-fluid">          
+          <div class="container-fluid" id="HowItWorks">          
             <div class="container narrow">          
                 <div class="row g-5 mb-5">
                   <!--Title-->
@@ -281,7 +275,7 @@
 
                 <div class="row mb-5">
                   <div class="mt-5 col-md-3 col-sm-12 mx-auto text-center">
-                    <a href="#" class="btn btn-lg kbtn-white-border px-4 py-2">Create Account</a>
+                    <a href="#GetStarted" class="btn btn-lg kbtn-white-border px-4 py-2">Start Now</a>
                   </div>
                 </div>
             </div>
@@ -393,7 +387,7 @@
           <!--End Testimonial Section-->
         
           <!-- FAQS -->
-          <div class="container py-5">          
+          <div class="container py-5" id="FAQs">          
             <div class="row p-3">
               <!--Title-->
               <h4 class="kcolor text-center mb-5">Frequently Asked Questions</h4>
@@ -481,7 +475,7 @@
                 </div>
               </div>
 
-              <div class="col d-flex justify-content-center align-items-center">
+              <div class="col d-flex justify-content-center align-items-center d-none">
                 <a href="#" class="btn btn-lg kbtn-blue-border px-4 py-2 text-center">More FAQs</a>
               </div>
             </div>
@@ -489,7 +483,7 @@
           <!--END FAQ-->
 
           <!-- Start Exchanging -->
-          <div class="container py-5">                  
+          <div class="container narrow py-5">                  
             <div class="row py-5 kbkg rounded-4 d-flex justify-content-center text-center mx-2 kbtn-light">
               <div class="col-md-6">
                 <h2 class="mb-5">Start exchanging and sending money internationally on Korrency</h2>
@@ -499,7 +493,7 @@
                 </p>
 
                 <div class="">
-                  <a href="#" class="btn btn-lg kbtn-white-border px-4 py-2 text-center">Get Started</a>
+                  <a href="#GetStarted" class="btn btn-lg kbtn-white-border px-4 py-2 text-center">Get Started</a>
                 </div>
                 
               </div>  
@@ -528,7 +522,7 @@
 
                 <div class="row border-bottom py-3">
                   <div class="col-md-4 mb-3">
-                    <h5 class="mb-0 kcolor">Join our Newsletter</h5>
+                    <h5 class="mb-0 kcolor">Join our Special Wait List</h5>
                     <p class="mt-3 text-wrap">Be the first to know about our new features, new corridors launch, exchange rate alerts, and more...</p>
                   </div>
                 
@@ -614,8 +608,7 @@
       <script src="assets/js/carousel.js"></script>
       <!--<script src="assets/js/phone.js"></script>-->
       <script src="assets/js/navbar.js"></script>
-      <script src="assets/js/hero_forms.js"></script>
-      
+      <script src="assets/js/hero_forms.js"></script>      
 
 </body>
 </html>
