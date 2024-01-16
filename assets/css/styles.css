@@ -77,7 +77,11 @@ body {
 #hero {
     background-image: url('../images/New_hero.png'); 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+
+    .sub-heading {
+        font-size: 1.2em;
+    }
 }
 
 #hero h3 {
@@ -113,7 +117,6 @@ main {
 /**** HERO FORM **********/
 #hero-form {
     background-color: #ffffff50;
-
     .amt-input-grp {
         
     }
@@ -233,6 +236,14 @@ main {
 
 }
 
+#hero-subscribe {
+    background-color: #ffffff50;
+    border: 0.02em solid #E8ECF3;
+
+    .info {
+        font-size: 1.2em;        
+    }
+}
 
 /**** --COLOURS-- ***************/
 .kcolor {
