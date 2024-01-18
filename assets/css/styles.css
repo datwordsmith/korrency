@@ -1,47 +1,48 @@
 @font-face {
-    font-family: 'KorrencyFont';
-    src: url('../fonts/SF-Pro-Display-Regular.otf') format('woff2'),
-         url('../fonts/SF-Pro-Display-Medium.otf') format('woff'),
-         url('../fonts/SF-Pro-Display-Bold.otf') format('woff');
-    /* Add additional formats if needed */
+    font-family: 'Proxima Nova';
+    /* src: url('../fonts/Proxima Nova Font.otf') format('opentype'); */
+    src: url("../fonts/Proxima Nova Regular.eot")format("embedded-opentype"),
+    url("../fonts/Proxima Nova Regular.woff2")format("woff2"),
+    url("../fonts/Proxima Nova Regular.woff")format("woff"),
+    url("../fonts/Proxima Nova Regular.ttf")format("truetype"),
+    url("../fonts/Proxima Nova Regular.svg")format("svg");
     font-weight: normal;
     font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Mont Heavy';
+    src: url("../fonts/Mont-Heavy.otf")format("opentype"),
 }
 
 @font-face {
-    font-family: 'SF-Pro-Display-Bold';
-    src: url('../fonts/SF-Pro-Display-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'PT Serif';
+    src: url("../fonts/PTSerif-Bold.ttf")format("truetype"),
 }
 
 @font-face {
-    font-family: 'SF-Pro-Display-Medium';
-    src: url('../fonts/SF-Pro-Display-Medium.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF-Pro-Display-Normal';
-    src: url('../fonts/SF-Pro-Display-Normal.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Righteous';
+    src: url("../fonts/Righteous-Regular.ttf")format("truetype"),
 }
 
 body {
-    font-family: 'SF-Pro-Display-Normal', sans-serif !important;
-    font-size: 0.8em;
+    font-family: 'Proxima Nova';
+    font-size: 16px;
 }
 
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-   font-family: 'SF-Pro-Display-Bold';
+   font-family: 'Mont Heavy';
 }
 
 .narrow {
-    width: 75%;
-    
+    width: 75%;    
+}
+
+@media only screen and (max-width: 768px) {
+    .narrow {
+        width: 100%;
+    }
 }
 
 #navbar {
@@ -52,10 +53,12 @@ body {
 
 #navbar .navbar-nav .nav-link {
     color: #042E62;
+    font-weight: bold;
+    font-size: 0.9em;
   }
 
 #navbar .navbar-nav .nav-link:hover {
-    color: #042E62;
+    color: #2799C9;
     background-position: 0%;
   }
 
@@ -75,29 +78,63 @@ body {
   }
 
 #hero {
-    background-image: url('../images/New_hero.png'); 
+    /* background-image: url('../images/New_hero.png');  */
+    position: relative;
+    background-color: #042E62;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
     .sub-heading {
         font-size: 1.2em;
     }
+
+    h3 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size:large;
+    }
+
+
+
+    .hero-body {
+        position: relative;
+        z-index: 4; /* Adjust the value as needed */
+    }
+    
+    .behind {
+        position: absolute;
+        z-index: 0;
+        min-height: 100%;
+        min-width: 100%;
+
+        .blue-sphere {
+            /* filter: blur(120px); */
+            opacity: 0.2; 
+        }
+
+        .purple-sphere {
+            position: relative;
+           opacity: 0.2;
+           margin-top: auto !important;
+        }
+
+
+    }
+
+
 }
 
-#hero h3 {
-    font-size: 2em;
-}
 
-#hero p {
-    font-size:large;
-}
 
 main {
-    background-color: #F1F8FF;
+    /* background-color: #F1F8FF; */
+    background-color: #DDEDFF;
 }
 
 #frame1 {
-    background-image: url('../images/frame1_bkg.png'); 
+    /* background-image: url('../images/frame1_bkg.png');  */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -238,10 +275,33 @@ main {
 
 #hero-subscribe {
     background-color: #ffffff50;
-    border: 0.02em solid #E8ECF3;
+    border: 0.02em solid #ffffff70;
 
     .info {
-        font-size: 1.2em;        
+        font-size: 1.0em;       
+    }
+
+    .amt-input-grp {
+        background-color: #ffffff40;
+        border: 1px solid #ffffff80 !important;        
+    }
+    
+    .amt-input-grp button, 
+    .amt-input-grp input {
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+    .amt-input-grp input {
+        border: none !important;
+        margin: 0px;
+        color: white;
+    }
+
+    .amt-input-grp input:hover, 
+    .amt-input-grp input:focus {
+        outline: none;
+        box-shadow: none !important;
     }
 }
 
@@ -411,3 +471,49 @@ main {
     font-size: 0.8em; /* Adjust the size to your preference */
   }
   
+
+  #HowItWorks {
+
+    background-color: #DDEDFF60;
+    .send {
+        width: 100%;
+        font-size:small; 
+        background-color: #042E62;
+        border: 2px #042E62 solid;
+        border-radius: 25px;
+        color: white;
+        font-size:small;
+        transition: box-shadow 0.5s;
+    }
+
+    .p2p {
+        width: 100%;
+        font-size:small; 
+        background: transparent;
+        border: none;
+        border-radius: 25px;
+        color: #123C99;
+        font-size:small;
+    }
+
+    .send:hover {
+        color: #A4C7FA;
+    }
+
+    .p2p:hover {
+        color: #ffffff;
+    }
+
+    .how_card {
+        background-color: #ffffff40;
+
+        h5, h6 {
+            color: #042E62;
+        }
+
+        p{
+            font-size: 0.9em;
+        }
+      }
+  }
+
