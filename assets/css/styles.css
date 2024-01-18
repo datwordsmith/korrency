@@ -11,8 +11,8 @@
 } 
 
 @font-face {
-    font-family: 'YatraOne';
-    src: url("../fonts/YatraOne-Regular.ttf")format("truetype"),
+    font-family: 'Mont Heavy';
+    src: url("../fonts/Mont-Heavy.otf")format("opentype"),
 }
 
 @font-face {
@@ -32,11 +32,11 @@ body {
 
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-   font-family: 'Righteous';
+   font-family: 'Mont Heavy';
 }
 
 .narrow {
-    width: 80%;    
+    width: 75%;    
 }
 
 @media only screen and (max-width: 768px) {
@@ -53,10 +53,12 @@ body {
 
 #navbar .navbar-nav .nav-link {
     color: #042E62;
+    font-weight: bold;
+    font-size: 0.9em;
   }
 
 #navbar .navbar-nav .nav-link:hover {
-    color: #042E62;
+    color: #2799C9;
     background-position: 0%;
   }
 
@@ -76,29 +78,63 @@ body {
   }
 
 #hero {
-    background-image: url('../images/New_hero.png'); 
+    /* background-image: url('../images/New_hero.png');  */
+    position: relative;
+    background-color: #042E62;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
     .sub-heading {
         font-size: 1.2em;
     }
+
+    h3 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size:large;
+    }
+
+
+
+    .hero-body {
+        position: relative;
+        z-index: 4; /* Adjust the value as needed */
+    }
+    
+    .behind {
+        position: absolute;
+        z-index: 0;
+        min-height: 100%;
+        min-width: 100%;
+
+        .blue-sphere {
+            /* filter: blur(120px); */
+            opacity: 0.2; 
+        }
+
+        .purple-sphere {
+            position: relative;
+           opacity: 0.2;
+           margin-top: auto !important;
+        }
+
+
+    }
+
+
 }
 
-#hero h3 {
-    font-size: 2em;
-}
 
-#hero p {
-    font-size:large;
-}
 
 main {
-    background-color: #F1F8FF;
+    /* background-color: #F1F8FF; */
+    background-color: #DDEDFF;
 }
 
 #frame1 {
-    background-image: url('../images/frame1_bkg.png'); 
+    /* background-image: url('../images/frame1_bkg.png');  */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -438,6 +474,7 @@ main {
 
   #HowItWorks {
 
+    background-color: #DDEDFF60;
     .send {
         width: 100%;
         font-size:small; 
@@ -466,4 +503,17 @@ main {
     .p2p:hover {
         color: #ffffff;
     }
+
+    .how_card {
+        background-color: #ffffff40;
+
+        h5, h6 {
+            color: #042E62;
+        }
+
+        p{
+            font-size: 0.9em;
+        }
+      }
   }
+
