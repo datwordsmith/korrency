@@ -21,7 +21,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav justify-content-end ms-auto">
                   <li class="nav-item">
                     <a class="nav-link me-3" aria-current="page" href="#">Home</a>
                   </li>
@@ -29,99 +29,128 @@
                     <a class="nav-link me-3" href="#HowItWorks">How it works</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#FAQs">FAQs</a>
+                    <a class="nav-link me-3" href="#FAQs">FAQs</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>                  
                 </ul>
-
-                <div class="ms-auto">
-                  <a href="#hero" class="btn btn-sm kbtn-dark px-3 py-2 me-2 ">Get Started</a>
-                </div>
-
               </div>
             </div>
           </nav>
 
-          <div class="container-fluid position-relative" id="hero">
-            <div class="d-flex behind">
-              <div class="mt-5 ">
-                <img src="assets/images/pink_sphere.png" alt="" class="pink-sphere"/>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="assets/images/purple_sphere.png" alt="" class="purple-sphere"/>
-              </div>              
-              <div class="ms-auto">
-                <img src="assets/images/blue_sphere.png" alt="" class="blue-sphere"/>
-              </div>
-            </div>
+          <div class="container-fluid position-relative" id="hero">  
+            <img src="assets/images/pink_sphere.png" alt="" class="pink-sphere" />
 
-            <div class="container narrow py-5 hero-body">
-                <div class="row py-3 mt-2">
-                      <div class="col-md-6 py-5 my-auto mx-auto text-white text-center text-md-start">
-                        <div class="me-md-5 py-md-5"> 
-                          <h1 class="me-md-2 pe-md-1">Transfer Internationally, Exchange Easily.</h1>
-                          <p class="py-2 my-4 sub-heading me-md-3">Send/Receive money globally and securely exchange with peers at your own rate.</p>
-                            
-                          <div class="d-grid gap-3 d-md-block">
+            <img src="assets/images/purple_sphere.png" alt="" class="purple-sphere" />    
+               
+              <div class="container hero-body">
+                <div class="pt-3">
+                  <div class="col-md-6 pt-4 my-auto mx-auto text-white text-center text-md-start">
+                    <p class="intro text-center">Introducing Korrency!</p>
+                    <div class="py-md-5 pt-4 text-center">
+                      <h1 class="">Transfer Globally,<br/>Exchange Easily.</h1>
+                      <p class="py-2 my-4 sub-heading text-center">
+                        Send/Receive money internationally and securely exchange money with your peers at your desired rate for your complete peace of mind
+                      </p>
+          
+                      <div class="row mb-3">
+                        <div class="col-md-10 mx-auto">
+                          <div class="form-text pb-2">
+                            3,427 others on the waitlist
                           </div>
-
-                          <div class="row">
-                            <div class="col-md-auto mb-2">
-                              <img alt="ios" src="assets/images/coming_soon_ios.png" width="180px" class="rounded-2"/>
+                          <div class="input-group amt-input-grp mb-3">
+                            <input type="email" class="form-control form-control-lg rounded-5 py-3" placeholder="Enter your best email address">
+                            <button class="btn kbtn-dark rounded-pill px-4 py-3 my-1 custom-search-botton" type="button" id="button-addon2">Notify Me!</button>
+                          </div>
+                        </div>                                          
+                      </div>
+          
+                      <div class="row justify-content-center position-relative">
+                        <div class="col-md-auto mb-2">
+                          <img alt="ios" src="assets/images/coming_soon_ios.png" width="200px" class="rounded-2" />
+                        </div>
+                        <div class="col-md-auto">
+                          <img alt="ios" src="assets/images/coming_soon_android.png" width="200px" class="rounded-2" />
+                        </div>
+                      </div>          
+                      <!--<p class="mt-4">Regulated by <strong>FINTRAC</strong></p>-->
+                    </div>
+                  </div>                  
+                  <!--
+                  <div class="col-md-5 col-sm-12 d-flex align-items-center" id="GetStarted">
+                    <div class="col-12 justify-content-center p-3 p-lg-4 rounded-4 shadow w-100" id="hero-subscribe">
+                      <h4 class="text-center text-white mt-3">Join our Special wait list</h4>
+                      <p class="mt-3 text-wrap info text-center text-white">Be the first to know when we launch.</p>
+                      <form id="subscribeForm" class="">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label class="text-white mb-1 ms-2">Firstname</label>
+                            <div class="input-group amt-input-grp rounded-3">
+                              <input id="firstnameInput" type="text" class="form-control form-control-lg" required>
                             </div>
-                            <div class="col-md-auto">
-                              <img alt="ios" src="assets/images/coming_soon_android.png" width="180px" class="rounded-2"/>
-                            </div>                            
-                          </div>                                                        
-
-                          <p class="mt-4">Regulated by <strong>FINTRAC</strong></p>
-                        </div>                        
-                      </div>
-
-                      <div class="col-md-5 col-sm-12 d-flex align-items-center" id="GetStarted">                 
-                          <div class="col-12 justify-content-center p-3 p-lg-4 rounded-4 shadow w-100" id="hero-subscribe">  
-                              <h4 class="text-center text-white mt-3">Join our Special wait list</h4>
-                              <p class="mt-3 text-wrap info text-center text-white">Be the first to know when we launch.</p>
-                              <form id="subscribeForm" class="">
-                                <div class="row">
-                                  <div class="col-md-6 mb-3">
-                                    <label class="text-white mb-1 ms-2">Firstname</label>
-                                    <div class="input-group amt-input-grp rounded-3">
-                                      <input id="firstnameInput" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                  </div>
-                              
-                                  <div class="col-md-6 mb-3">
-                                    <label class="text-white mb-1 ms-2">Surname</label>
-                                    <div class="input-group amt-input-grp rounded-3">
-                                      <input id="surnameInput" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                  </div>
-                                </div>
-                              
-                                <div>
-                                  <label class="text-white mb-1 ms-2">Email Address</label>
-                                  <div class="input-group amt-input-grp mb-3 rounded-3">
-                                    <input id="emailInput" type="email" class="form-control form-control-lg" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="" required>
-                                  </div>
-                                </div>
-                              
-                                <div class="my-4">
-                                  <div class="pt-2">
-                                    <button type="submit" class="btn kbtn-dark kbtn-full px-4 py-3 rounded-5 w-100">Join Now</button>
-                                  </div>
-                                </div>
-                              </form>                                                              
-                          </div>     
-                      </div>
+                          </div>
+          
+                          <div class="col-md-6 mb-3">
+                            <label class="text-white mb-1 ms-2">Surname</label>
+                            <div class="input-group amt-input-grp rounded-3">
+                              <input id="surnameInput" type="text" class="form-control form-control-lg" required>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div>
+                          <label class="text-white mb-1 ms-2">Email Address</label>
+                          <div class="input-group amt-input-grp mb-3 rounded-3">
+                            <input id="emailInput" type="email" class="form-control form-control-lg" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="" required>
+                          </div>
+                        </div>
+          
+                        <div class="my-4">
+                          <div class="pt-2">
+                            <button type="submit" class="btn kbtn-dark kbtn-full px-4 py-3 rounded-5 w-100">Join Now</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  -->
                 </div>
-            </div>
+
+                <div class="row pb-5 mt-2">
+                  <div class="col-md-4">
+                    
+                  </div>
+                  <div class="col-md-4 mb-3 mx-auto text-center">
+                    <div class="d-flex flex-row justify-content-center position-relative">
+                      <div class="col"><a href="#" class="text-white"><img class="img-fluid" alt="Gmail" src="assets/images/fa-brands_instagram.png"></a></div>
+                      <div class="col"><a href="#" class="text-white"><img class="img-fluid" alt="Facebook" src="assets/images/fa-brands_facebook.png"></a></div>
+                      <div class="col"><a href="#" class="text-white"><img class="img-fluid" alt="Twitter (X)" src="assets/images/fa-brands_twitter_x.png"></a></div>
+                      <div class="col"><a href="#" class="text-white"><img class="img-fluid" alt="LinkedIn" src="assets/images/fa-brands_linkedin-in.png"></a></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 countries text-center text-md-end">
+                    <small class="text-white pb-3">
+                      Send money to 12+ countries
+                    </small>
+                    <div class="mt-2 d-flex flex-row justify-content-md-end justify-content-center position-relative">
+                      <img class="img-fluid " alt="Canada" src="assets/images/country/canada.png">
+                      <img class="img-fluid ms-2" alt="Nigeria" src="assets/images/country/nigeria.png">
+                      <img class="img-fluid ms-2" alt="Ghana" src="assets/images/country/ghana.png">
+                      <img class="img-fluid ms-2" alt="Kenya" src="assets/images/country/kenya.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
           </div>
+          
 
           <!--Why Korrency-->
           <section class="py-5" id="frame1">
             <div class="container narrow pt-5">          
                 <!--Title-->
-              <h4 class="kcolor text-center mb-5">Why use Korrency</h4>
+              <h2 class="kcolor text-center mb-5">Why use Korrency</h2>
 
               <div class="row py-3 row-cols-1 row-cols-lg-3 gx-3 gx-lg-3">
                 <div class="col mb-3">
