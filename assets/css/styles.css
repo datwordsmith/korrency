@@ -43,6 +43,7 @@ body {
     .narrow {
         width: 100%;
     }
+
 }
 
 #navbar {
@@ -102,7 +103,7 @@ body {
         /*position: relative;
         z-index: 2;  Adjust the value as needed */
 
-        .intro {
+        .intro, .follow {
             letter-spacing: 5px;
         }
 
@@ -143,11 +144,18 @@ body {
         margin-top: auto !important;
         z-index: 0;
     }
+  
+    #copyButton:hover {
+        background-color:#042E62;
+    }
+
+    #shareUrl {
+        outline: none;
+        box-shadow: none !important;
+    }
 
 
 }
-
-
 
 main {
     /* background-color: #F1F8FF; */
@@ -468,6 +476,21 @@ main {
     .phone {
         display: none;
     }
+
+    .purple-sphere {
+        position: absolute;
+        opacity: 0.2;
+        left: 0%; /* Adjust as needed for centering on smaller screens */
+        margin-top: auto !important;
+        z-index: 0;
+
+        position: absolute;
+        opacity: 0.2;
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Centering trick */
+        margin-top: auto !important;
+        z-index: 0;
+    }
 }
 
 .slide-down {
@@ -538,3 +561,11 @@ main {
       }
   }
 
+.mobile {
+
+}
+
+.mobile img {
+    
+
+}
