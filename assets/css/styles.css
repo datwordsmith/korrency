@@ -44,6 +44,21 @@ body {
         width: 100%;
     }
 
+    #hero {
+        
+        h1 {
+        font-size: 2em !important;
+        }
+
+        .sub-heading {
+            font-size: 0.8em;
+        }
+
+        .waitlist {
+            font-size: 0.6em;
+        }
+    }
+
 }
 
 #navbar {
@@ -85,8 +100,12 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-    .sub-heading {
-        /* font-size: 1.2em; */
+    h1 {
+        font-size: 3.5em;
+    }
+
+    .waitlist {
+        font-size: 0.8em;
     }
 
     h3 {
@@ -98,13 +117,16 @@ body {
     }
 
 
-
     .hero-body {
         /*position: relative;
         z-index: 2;  Adjust the value as needed */
 
         .intro, .follow {
             letter-spacing: 5px;
+        }
+
+        .follow {
+            font-size: 0.7em !important;
         }
 
         h1 {
@@ -129,6 +151,9 @@ body {
             box-shadow: none !important;
         }
         
+        .list_countries a {
+            color: white;
+        }
     }
     
     .pink-sphere {
