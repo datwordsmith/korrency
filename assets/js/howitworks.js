@@ -5,6 +5,8 @@ $(document).ready(function () {
         $(this).toggleClass('send p2p');
         $('#sendList').toggleClass('d-block d-none');
         $('#p2pList').toggleClass('d-block d-none');
+        $('#send_mobile').toggleClass('d-block d-none');
+        $('#p2p_mobile').toggleClass('d-block d-none');
     });
 
     // Toggle classes when Buy button is clicked
@@ -13,6 +15,8 @@ $(document).ready(function () {
         $(this).toggleClass('send p2p');
         $('#sendList').toggleClass('d-block d-none');
         $('#p2pList').toggleClass('d-block d-none');
+        $('#send_mobile').toggleClass('d-block d-none');
+        $('#p2p_mobile').toggleClass('d-block d-none');
     });
 
 
